@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 포트폴리오</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+      header, footer {
+            background: linear-gradient(to right, #1e5799, #2989d8, #207cca, #7db9e8); /* 파란색 그라데이션 추가 */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            margin: 1em;
+            padding: 1em;
+            background-color: white;
+        }
+
+        .about, .experience, .skills {
+            margin-bottom: 2em;
+        }
+
+        footer p, footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>안녕하세요, 저는 박규경입니다!</h1>
+        <p id="currentDateTime"></p> <!-- 날짜와 시각을 표시할 요소 -->
+    </header>
+
+    <section class="about">
+        <h2>소개</h2>
+        <p>
+            안녕하세요, 박규경입니다. 33살의 취업준비생으로, 웹 개발의 세계에 발을 내딛고 있습니다. 이전에는 소방점검 업체인 명신화이어이엔지에서 1년 10개월간 근무하며 기술적 경험과 팀워크 능력을 쌓았습니다. 그러나 끊임없이 변화하는 기술 세계에 대한 열정을 발견하고, 커리어 전환을 결심했습니다.
+            
+            현재는 프론트엔드 웹 개발에 집중하고 있으며, HTML, CSS, JavaScript를 비롯한 최신 웹 기술을 공부하고 있습니다. 제 꿈은 사용자 친화적이면서 기술적으로 탁월한 웹사이트와 애플리케이션을 만드는 것입니다. 이를 통해 사람들의 일상에 편리함과 가치를 제공하고 싶습니다.
+            
+            제 이전 경력이 웹 개발과는 다른 분야이지만, 이 경험은 저에게 문제 해결 능력, 체계적인 작업 수행 능력, 그리고 다양한 상황에서의 커뮤니케이션 능력을 길러주었습니다. 이제 이러한 기술을 웹 개발 분야에 적용하여 새로운 도전을 시작하고자 합니다. 기술의 세계에서 저만의 색깔을 찾아 나가고 싶습니다.
+        </p>
+    </section>
+    <section class="academic background">
+        <h2>학력</h2>
+        <ul>
+            <li>북평고등학교 졸업</li>
+            <li>강원대학교 사회과학대학 정치외교학과 졸업</li>
+        </ul>
+    </section> 
+    <section class="experience">
+        <h2>경력 및 프로젝트</h2>
+        <ul>
+            <li>
+                <strong>프로젝트 1: 예원비즈 홈페이지 유지보수</strong>
+                <p>2024년부터 예원교회 산업인들을 위한 홈페이지인 예원비즈의 유지보수를 맡고 있습니다. 이 프로젝트에서 저는 웹사이트의 디자인 개선, 기능적 업데이트, 그리고 보안 강화를 담당하고 있습니다. 최신 웹 표준을 준수하며, 사용자 경험을 개선하기 위한 지속적인 테스트와 피드백을 반영하고 있습니다. 이 경험을 통해 웹 개발 능력뿐만 아니라, 효과적인 사용자 인터페이스 디자인 및 사용자 경험 설계에 대한 이해도를 높일 수 있었습니다.</p>
+            </li>
+            <li><strong>프로젝트 2:</strong></a> [프로젝트 설명]</li>
+            <li><strong>프로젝트 3:</strong></a> [프로젝트 설명]</li>
+            <li><strong>프로젝트 4:</strong></a> [프로젝트 설명]</li>
+            <li><strong>프로젝트 5:</strong></a> [프로젝트 설명]</li>
+            <li><strong>프로젝트 6:</strong></a> [프로젝트 설명]</li>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2>기술 스킬</h2>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <!-- 추가 기술 목록 -->
+        </ul>
+    </section>
+    <footer>
+        <p>연락처: <a href="mailto:parkgyugyeong926@gmail.com">parkgyugyeong926@gmail.com</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/gyugyeong-park-15917a214">LinkedIn</a> |
+            <a href="https://www.instagram.com/033potatobear">Instagram</a> |
+            <a href="https://www.facebook.com/P1Gee2">Facebook</a> |
+            <a href="https://twitter.com/PotatoBear91">Twitter</a> |
+            <a href="https://github.com/PotatoBear91">GitHub</a>
+        </p>
+    </footer>
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var dateTimeString = now.toLocaleString('ko-KR');
+            document.getElementById('currentDateTime').textContent = dateTimeString;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000); // 매초마다 시간을 업데이트
+    </script>
+</body>
+</html>
